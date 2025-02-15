@@ -58,10 +58,10 @@ export default function App() {
         {/* Sección derecha */}
         <div className="section2-right flex justify-center items-center">
           <div className="Imagen1">
-            <img src={`${import.meta.env.BASE_URL}images/imagen1.jpeg`} alt="First slide" />
+            <img src={`${import.meta.env.BASE_URL}images/Imagen1.jpeg`} alt="First slide" />
           </div>
           <div className="Imagen2">
-            <img src={`${import.meta.env.BASE_URL}images/imagen5.jpeg`} alt="First slide" />
+            <img src={`${import.meta.env.BASE_URL}images/Imagen5.jpeg`} alt="First slide" />
           </div>
           </div>
       </section>
@@ -74,7 +74,7 @@ export default function App() {
         <div className="contenedor">
           {/* Contenedor de la imagen a la izquierda */}
           <div className="imagen-container">
-            <img src={`${import.meta.env.BASE_URL}images/imagen5.jpeg`} alt="Horarios de salida" className="imagen-horarios" />
+            <img src={`${import.meta.env.BASE_URL}images/Imagen5.jpeg`} alt="Horarios de salida" className="imagen-horarios" />
             </div>
             {/* Contenedor de la tabla a la derecha */}
             <div className="Titulo-Tabla">
