@@ -1,5 +1,6 @@
 import "./App.css";
-import ControlledCarousel from "./Carousel";
+import Carrusel1 from "./components/Carrusel1";
+import Carrusel2 from "./components/Carrusel2";
 import Boton from "./Boton";
 import Tabla from "./Tabla";
 import Carta from "./Carta";
@@ -21,13 +22,13 @@ export default function App() {
           {/* Carrusel */}
           <div className="w-full flex justify-center">
             <div className= "carrusel max-w-[100%] w-full">
-              <ControlledCarousel />
+              <Carrusel1 />
             </div>
           </div>
           {/* Texto inferior */}
           <div className="mt-4 w-3/4">
-          <h2 className="text-xl font-bold">¡Descubre la mina de caolín en la Unión, Antioquia!</h2>
-          <p className="text-base mt-2">
+          <h2 className="descubre">¡Descubre la mina de caolín en la Unión, Antioquia!</h2>
+          <p className="descubreP">
             ¿Listo para una aventura inolvidable? Ven a explorar la mina de caolín, un tesoro oculto en la Unión, Antioquia,
             donde la naturaleza y la historia se combinan en un paisaje impresionante.
           </p>
@@ -43,31 +44,26 @@ export default function App() {
 
       {/* Sección 2 */}
       <section className="section-2">
-        {/* Sección izquierda con texto */}
-        <div className="section2-left">
-          <h1 className="TituloS2">¿Qué te espera en la Unión?</h1>
-          <ul className="ListaS2">
-            <li>Caminata guiada por senderos naturales</li>
-            <li>Exploración de la impresionante mina de caolín</li>
-            <li>Paisajes únicos para fotos espectaculares</li>
-            <li>Conexión con la historia minera de la región</li>
-            <li>Creacion de ceramicas con material extraido de la mina</li>
-            <li>Aprende y diviertete conociendo mas de la historia minera</li>
-          </ul>
-        </div>
         {/* Sección derecha */}
-        <div className="section2-right flex justify-center items-center">
-          <div className="Imagen1">
-            <img src={`${import.meta.env.BASE_URL}images/Imagen1.jpeg`} alt="First slide" />
-          </div>
-          <div className="Imagen2">
-            <img src={`${import.meta.env.BASE_URL}images/Imagen5.jpeg`} alt="First slide" />
-          </div>
+        <div className="carrusel2">
+          <Carrusel2 />
           </div>
       </section>
       <section className="section2-bottom">
-        <p classNmae ="NotaImportante">Nota importante: No tenemos ninguna asociacion con ningun guia ni persona no autorizada por nuestra empresa</p>
-      </section>
+        <h1 className="TituloS2">¿Qué te espera en la Unión?</h1>
+        <ul className="ListaS2">
+          <li>Caminata guiada por senderos naturales</li>
+          <li>Exploración de la impresionante mina de caolín</li>
+          <li>Paisajes únicos para fotos espectaculares</li>
+          <li>Conexión con la historia minera de la región</li>
+          <li>Creación de cerámicas con material extraído de la mina</li>
+          <li>Fotos espectaculares con dron</li>
+          <li>Acceso al museo</li>
+          <li>Acceso a los miradores</li>
+          </ul>
+          <p className="NotaImportante">Nota importante: No tenemos ninguna asociación con ningún guía ni persona no autorizada por nuestra empresa.</p>
+          </section>
+
 
       {/* Sección 3 */}
       <section className="section-3">

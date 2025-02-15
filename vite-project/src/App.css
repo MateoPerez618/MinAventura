@@ -12,7 +12,7 @@
 }
 
 .customHeader img {
-  width: 250px; /* Ajusta el tamaño de la imagen */
+  width: 500px; /* Ajusta el tamaño de la imagen */
   height: auto; /* Mantiene la proporción */
   object-fit: contain; /* Evita que se deforme */
 }
@@ -24,7 +24,7 @@
   transform: translateX(-50%); /* Centra el texto horizontalmente */
   text-align: center;
   color: white;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
   padding: 10px 20px;
@@ -63,7 +63,7 @@
 
 .TituloS2 {
   position: relative;
-  top: 10%;
+  top: 20%;
   font-family: "Roboto Condensed", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -83,12 +83,27 @@ section {
     height: 150vh;
     background-color: #000000
   }
-  
-  .section-3 {
-    background-color: #FDF0D5;
+  .descubre {
+    position: relative;
+    top: 10%;
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 52px;
+    font-weight: bold;
+  }
+  .descubreP {
+    position: relative;
+    top: 20%;
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
   }
 
   .section-3 {
+    background-color: #FDF0D5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,8 +166,8 @@ section {
   }
   
   .card {
-    max-width: 220px;
-    max-height: 400px;
+    max-width: 400px;
+    max-height: 800px;
     background: #f4f4f4;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -161,13 +176,13 @@ section {
   }
   
   .title {
-    font-size: 18px;
+    font-size: 45px;
     font-weight: bold;
     color: #333;
   }
   
   .description {
-    font-size: 14px;
+    font-size: 24px;
     margin-top: 10px;
     color: #555;
   }
@@ -180,7 +195,7 @@ section {
   
   .price-list li {
     text-align: left;
-    font-size: 13px;
+    font-size: 20px;
     margin: 5px 0;
   }
   
@@ -210,69 +225,104 @@ section {
   }
 
   .section-2 {
-    background-color: #003049
+    background-color: #003049;
+    height: 150vh;
   }
-  
-  .section2-left {
-    width: 40%;
+
+  /* Ajusta el tamaño y alineación del carrusel */
+   .carrusel2 {
+     width: 100%;
+     height: 100vh; /* Define un tamaño fijo */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #000000;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+     position: relative;
+   }
+   
+   .carrusel2-container {
+     width: 100%;
+     height: 300vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     overflow: hidden;
+     object-fit: contain;
+     border-radius: 50px;
+   }
+   
+   .carrusel2-container img {
+     max-width: 100%;
+     max-height: 100%;
+     object-fit: conver;
+   }
+   
+   
+   /* Asegura que las imágenes se adapten bien */
+   .carrusel2 img {
+     width: 200%;
+     height: 200%;
+     object-fit: contain;
+   }
+   
+   /* Estilos adicionales para los botones del carrusel */
+   .carousel2-control-prev,
+   .carousel2-control-next {
+     filter: invert(1); /* Cambia el color de los botones para que sean visibles */
+   }
+   
+   .section2-bottom {
+    width: 100%;
+    height: auto; /* Se ajusta automáticamente al contenido */
+    padding: 20px;
+    background-color: #003049;
     color: white;
+    font-family: "Roboto Condensed", serif;
+    font-size: 14px;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #003049;
-  }
-
-  .section2-right {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #003049;
-  }
-
-  .section2-bottom {
-    width: 100%;
-    height: 5%;
-    text-align: left;  /* Alinea el texto a la izquierda */
-    padding-left: 40px; /* Agrega espacio desde el borde izquierdo */
-    background-color: #003049;
-    color: white;
-    font-family: "Roboto Condensed", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 12px;
-    font-weight: bold;
-  }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
+    align-items: center; /* Centra los elementos horizontalmente */
     text-align: center;
-    margin-bottom: 20px;
-    font-family: "Roboto Condensed", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  
-  .list {
-    text-align: left;
-    font-size: 1.2rem;
+}
+
+.TituloS2 {
+    font-size: 68px; /* Reduzco tamaño para que no ocupe demasiado espacio */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ListaS2 {
     list-style-type: disc;
     padding-left: 20px;
-    font-family: "Roboto Condensed", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
+    text-align: left;
+    max-width: 600px;
+    width: 100%; /* Se adapta al contenedor */
+    margin-bottom: 10px; /* Espaciado para que no se junte con la nota */
+}
 
+.ListaS2 li {
+    font-size: 26px;
+    margin-bottom: 5px; /* Espaciado entre elementos */
+}
+
+.NotaImportante {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: left;
+    max-width: 600px;
+}
 
 /* Ajusta el tamaño y alineación del carrusel */
 .carrusel {
   width: 100%;
-  height: 50vh; /* Define un tamaño fijo */
+  height: 90vh; /* Define un tamaño fijo */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,19 +335,20 @@ section {
 
 .carrusel-container {
   width: 100%;
-  height: 300vh; /* Tamaño fijo */
+  height: 300vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
   object-fit: contain;
+  border-radius: 50px;
 }
 
 .carrusel-container img {
-  max-width: 400px;
-  max-height: 400px;
-  object-fit: conver; /* Muestra la imagen completa sin recortar */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: conver;
 }
 
 
@@ -305,7 +356,7 @@ section {
 .carrusel img {
   width: 200%;
   height: 200%;
-  object-fit: contain; /* Mantiene la proporción sin recortar */
+  object-fit: contain;
 }
 
 /* Estilos adicionales para los botones del carrusel */
@@ -314,17 +365,6 @@ section {
   filter: invert(1); /* Cambia el color de los botones para que sean visibles */
 }
 
-.carousel-control-prev {
-  left: 10px; /* Ajusta la distancia del borde izquierdo */
-}
-
-.carousel-control-next {
-  right: 10px; /* Ajusta la distancia del borde derecho */
-}
-
-.carousel-indicators .active {
-  background-color: red; /* Color del punto activo */
-}
 
 /* From Uiverse.io by cssbuttons-io */ 
 button {
@@ -417,13 +457,6 @@ button {
   outline: none;
  }
 
-.ListaS2 {
-  font-family: "Roboto Condensed", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 12px;
-  font-weight: bold;
-}
 
 
   
