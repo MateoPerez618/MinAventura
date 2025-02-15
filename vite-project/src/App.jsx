@@ -1,6 +1,8 @@
 import "./App.css";
 import ControlledCarousel from "./Carousel";
 import Boton from "./Boton";
+import Tabla from "./Tabla";
+import Carta from "./Carta";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
@@ -42,37 +44,44 @@ export default function App() {
       {/* Sección 2 */}
       <section className="section-2">
         {/* Sección izquierda con texto */}
-        <div className="section-left">
+        <div className="section2-left">
           <h1 className="TituloS2">¿Qué te espera en la Unión?</h1>
           <ul className="ListaS2">
             <li>Caminata guiada por senderos naturales</li>
             <li>Exploración de la impresionante mina de caolín</li>
             <li>Paisajes únicos para fotos espectaculares</li>
             <li>Conexión con la historia minera de la región</li>
+            <li>Creacion de ceramicas con material extraido de la mina</li>
+            <li>Aprende y diviertete conociendo mas de la historia minera</li>
           </ul>
         </div>
         {/* Sección derecha */}
-        <div className="section-right flex justify-center items-center">
+        <div className="section2-right flex justify-center items-center">
           <div className="Imagen1">
-            <img src="/images/imagen2.jpg" alt="First slide" />
+            <img src="/images/Imagen1.jpeg" alt="First slide" />
           </div>
           <div className="Imagen2">
-            <img src="/images/imagen1.jpg" alt="First slide" />
+            <img src="/images/Imagen5.jpeg" alt="First slide" />
           </div>
           </div>
       </section>
-
+      <section className="section2-bottom">
+        <p classNmae ="NotaImportante">Nota importante: No tenemos ninguna asociacion con ningun guia ni persona no autorizada por nuestra empresa</p>
+      </section>
 
       {/* Sección 3 */}
-      <section className="section-3 h-screen flex flex-col items-center justify-center bg-red-500">
-        <h1 className="text-white text-4xl font-bold">Sección 3</h1>
-        <p className="text-white text-lg">Seccion de precios y lugares de salida.</p>
+      <section className="section-3">
+      <div className="Titulo-Tabla">
+        <h2 className="titulo-horarios">Estos son nuestros horarios de salida:</h2>
+        <div className="custom-table">
+        <Tabla/>
+        </div>
+      </div>
+      
       </section>
-
       {/* Sección 4 */}
-      <section className="section-4 h-screen flex flex-col items-center justify-center bg-yellow-500">
-        <h1 className="text-white text-4xl font-bold">Sección 4</h1>
-        <p className="text-black text-lg">Seccion de preguntas frecuentes</p>
+      <section className="section-4">
+        <Carta/>
       </section>
 
       {/* Sección 5 */}
