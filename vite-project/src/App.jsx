@@ -10,7 +10,7 @@ export default function App() {
     <div className="w-screen h-screen overflow-y-auto flex flex-col snap-y snap-mandatory">
       {/* Sección 1 - Carrusel con Textos */}
       <header className="customHeader">
-        <img src="/images/Logo.png" alt="First slide" />
+        <img src={`${import.meta.env.BASE_URL}images/Logo.png`} alt="First slide" />
       </header>
       <section className="section-1">
         <div className="TextoSuperior">
@@ -58,10 +58,10 @@ export default function App() {
         {/* Sección derecha */}
         <div className="section2-right flex justify-center items-center">
           <div className="Imagen1">
-            <img src="/images/Imagen1.jpeg" alt="First slide" />
+            <img src={`${import.meta.env.BASE_URL}images/imagen1.jpeg`} alt="First slide" />
           </div>
           <div className="Imagen2">
-            <img src="/images/Imagen5.jpeg" alt="First slide" />
+            <img src={`${import.meta.env.BASE_URL}images/imagen5.jpeg`} alt="First slide" />
           </div>
           </div>
       </section>
@@ -74,7 +74,7 @@ export default function App() {
         <div className="contenedor">
           {/* Contenedor de la imagen a la izquierda */}
           <div className="imagen-container">
-            <img src="/images/Imagen5.jpeg" alt="Horarios de salida" className="imagen-horarios" />
+            <img src={`${import.meta.env.BASE_URL}images/imagen5.jpeg`} alt="Horarios de salida" className="imagen-horarios" />
             </div>
             {/* Contenedor de la tabla a la derecha */}
             <div className="Titulo-Tabla">
