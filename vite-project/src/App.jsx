@@ -4,6 +4,7 @@ import Carrusel2 from "./components/Carrusel2";
 import Boton from "./Boton";
 import Tabla from "./Tabla";
 import Carta from "./Carta";
+import Acordeon from "./Acordeon";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
@@ -88,10 +89,23 @@ export default function App() {
 
       {/* Sección 5 */}
       <section className="section-5">
-        <h1 className="text-white text-4xl font-bold">Sección 5</h1>
-        <p className="text-black text-lg">Seccion de testimonios</p>
+      <div className="map-container">
+        <iframe
+        title="Google Maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7936.312706839472!2d-75.36686308757321!3d5.9731951465684165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46961598ac13af%3A0x7ea70f9b0c1d7d4c!2sLa%20Uni%C3%B3n%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1739637289681!5m2!1ses-419!2sco"
+        width="800"
+        height="500"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+        </div>
       </section>
-      
+      <section className="section-6">
+        <h2 className="titulo-acordeon">Preguntas frecuentes</h2>
+        <Acordeon/>
+        </section> 
     </div>
   );
 }
