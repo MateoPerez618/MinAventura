@@ -88,67 +88,54 @@ section {
     background-color: #FDF0D5;
   }
 
-.section3-left{
-  position: relative;
-  top: 10%;
-  font-family: "Roboto Condensed", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 32px;
-  font-weight: bold;
-
-}
-/* Estilos para el título encima de la tabla */
-.titulo-horarios {
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: "Roboto Condensed", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-
-/* Estilos generales de la tabla */
-.custom-table {
-  width: 100%;
-  margin: 3px auto;
-  border-collapse: collapse;
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  color: white; /* Texto blanco en toda la tabla */
-}
-
-/* Fondo y color de letra en los encabezados */
-.custom-table thead {
-  background-color: #ff5733; /* Fondo naranja intenso */
-  color: white; /* Texto blanco */
-}
-
-/* Fondo y color de letra en las celdas */
-.custom-table th,
-.custom-table td {
-  border: 2px solid black;
-  padding: 15px;
-  text-align: center;
-}
-
-/* Cambiar fondo y color de texto de las filas pares */
-.custom-table tbody tr:nth-child(even) {
-  background-color: #444; /* Gris oscuro */
-  color: #ffcc00; /* Texto amarillo */
-}
-
-/* Cambiar fondo y color de texto de las filas impares */
-.custom-table tbody tr:nth-child(odd) {
-  background-color: #666; /* Gris medio */
-  color: #00ffcc; /* Texto celeste */
-}
+  .section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: row; /* Alinea la imagen y la tabla en fila */
+    align-items: center;
+    justify-content: space-between; /* Espacia los elementos */
+    width: 80%; /* Ajusta el ancho total */
+    max-width: 1000px;
+    gap: 40px;
+  }
+  
+  .imagen-container {
+    flex: 1; /* Ocupa la mitad del espacio */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagen-horarios {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Titulo-Tabla {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .titulo-horarios {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .custom-table {
+    width: 100%;
+    max-width: 300px;
+  }
+  
   
   .section-4 {
     background-color: #669BBC; /* Amarillo */

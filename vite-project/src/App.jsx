@@ -71,13 +71,19 @@ export default function App() {
 
       {/* Sección 3 */}
       <section className="section-3">
-      <div className="Titulo-Tabla">
-        <h2 className="titulo-horarios">Estos son nuestros horarios de salida:</h2>
-        <div className="custom-table">
-        <Tabla/>
+        <div className="contenedor">
+          {/* Contenedor de la imagen a la izquierda */}
+          <div className="imagen-container">
+            <img src="/images/Imagen5.jpeg" alt="Horarios de salida" className="imagen-horarios" />
+            </div>
+            {/* Contenedor de la tabla a la derecha */}
+            <div className="Titulo-Tabla">
+              <h2 className="titulo-horarios">Estos son nuestros horarios de salida:</h2>
+              <div className="custom-table">
+                <Tabla />
+              </div>
+            </div>
         </div>
-      </div>
-      
       </section>
       {/* Sección 4 */}
       <section className="section-4">
@@ -85,7 +91,7 @@ export default function App() {
       </section>
 
       {/* Sección 5 */}
-      <section className="section-5 h-screen flex flex-col items-center justify-center bg-yellow-500">
+      <section className="section-5">
         <h1 className="text-white text-4xl font-bold">Sección 5</h1>
         <p className="text-black text-lg">Seccion de testimonios</p>
       </section>
