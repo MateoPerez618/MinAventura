@@ -61,15 +61,6 @@
 
 }
 
-.TituloS2 {
-  position: relative;
-  top: 20%;
-  font-family: "Roboto Condensed", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 32px;
-  font-weight: bold;
-}
 
 section {
     width: 100vw;
@@ -288,54 +279,24 @@ section {
 
   .section-2 {
     background-color: #003049;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
     height: 150vh;
   }
 
-  /* Ajusta el tamaño y alineación del carrusel */
-   .carrusel2 {
-     width: 100%;
-     height: 100vh; /* Define un tamaño fijo */
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background-color: #000000;
-     border-radius: 10px;
-     overflow: hidden;
-     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-     position: relative;
-   }
-   
-   .carrusel2-container {
-     width: 100%;
-     height: 300vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     position: relative;
-     overflow: hidden;
-     object-fit: contain;
-     border-radius: 50px;
-   }
-   
-   .carrusel2-container img {
-     max-width: 100%;
-     max-height: 100%;
-     object-fit: conver;
-   }
-   
-   
-   /* Asegura que las imágenes se adapten bien */
-   .carrusel2 img {
-     width: 200%;
-     height: 200%;
-     object-fit: contain;
-   }
-   
-   /* Estilos adicionales para los botones del carrusel */
-   .carousel2-control-prev,
-   .carousel2-control-next {
-     filter: invert(1); /* Cambia el color de los botones para que sean visibles */
-   }
+  .Seccion2ContenedorTitulo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .Seccion2Titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+  }
    
    .section2-bottom {
     width: 100%;
@@ -410,7 +371,7 @@ section {
 .carrusel-container img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: conver;
+  object-fit: cover;
 }
 
 
@@ -519,6 +480,50 @@ button {
   outline: none;
  }
 
+ .carousel-container2 {
+  width: 100%;
+  height: 300vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  border-radius: 50px;
+  flex-direction: column; /* Asegura que el texto quede abajo */
+  align-items: center;
+}
 
+.carousel2 {
+  width: 100%;
+  height: 90vh; /* Define un tamaño fijo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
 
-  
+.carousel-text2 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 80%;
+  color: #ffffff;
+}
+
+.carrusel-container2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carrusel2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+

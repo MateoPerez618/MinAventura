@@ -1,4 +1,4 @@
-import ControlledCarousel from "../ControlledCarousel";
+import ControlledCarousel from "../ControlledCarousel1";
 
 function Carrusel1() {
   const imagenesSeccion2 = [

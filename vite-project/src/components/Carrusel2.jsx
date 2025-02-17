@@ -1,16 +1,16 @@
-import ControlledCarousel from "../ControlledCarousel";
+import ControlledCarousel from "../ControlledCarousel2";
 
 function Carrusel2() {
-  const imagenesSeccion2 = [
-    "images/Imagen2.jpeg",
-    "images/Imagen3.jpeg",
-    "images/Imagen4.jpeg",
-    "images/Imagen6.jpeg",
+  const slidesData = [
+    { image:"images/Imagen2.jpeg", text : "imagen1"},
+    { image:"images/Imagen3.jpeg", text : "imagen2"},
+    { image:"images/Imagen4.jpeg", text : "imagen3"},
+    { image:"images/Imagen6.jpeg", text : "imagen4"},
   ];
 
   return (
     <section>
-      <ControlledCarousel images={imagenesSeccion2} />
+      <ControlledCarousel slides={slidesData} />
     </section>
   );
 }

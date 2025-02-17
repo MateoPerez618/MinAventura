@@ -45,25 +45,13 @@ export default function App() {
 
       {/* Sección 2 */}
       <section className="section-2">
-        {/* Sección derecha */}
+        <div className="Seccion2ContenedorTitulo">
+          <h2 className="Seccion2Titulo">¿Que te espera en la union?</h2>
+        </div>
         <div className="carrusel2">
           <Carrusel2 />
           </div>
       </section>
-      <section className="section2-bottom">
-        <h1 className="TituloS2">¿Qué te espera en la Unión?</h1>
-        <ul className="ListaS2">
-          <li>Caminata guiada por senderos naturales</li>
-          <li>Exploración de la impresionante mina de caolín</li>
-          <li>Paisajes únicos para fotos espectaculares</li>
-          <li>Conexión con la historia minera de la región</li>
-          <li>Creación de cerámicas con material extraído de la mina</li>
-          <li>Fotos espectaculares con dron</li>
-          <li>Acceso al museo</li>
-          <li>Acceso a los miradores</li>
-          </ul>
-          <p className="NotaImportante">Nota importante: No tenemos ninguna asociación con ningún guía ni persona no autorizada por nuestra empresa.</p>
-          </section>
 
 
       {/* Sección 3 */}
