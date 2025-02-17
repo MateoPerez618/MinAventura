@@ -7,9 +7,9 @@ function Boton() {
       <button
         onClick={() => window.open(urlWhatsApp, "_blank")}
       >
-        <span class="shadow"></span>
-        <span class="edge"></span>
-        <span class="front text"> ¡Quiero saber más información!
+        <span className="shadow"></span>
+        <span className="edge"></span>
+        <span className="front text"> ¡Quiero saber más información!
         </span>
       </button>
     );

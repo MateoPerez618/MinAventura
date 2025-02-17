@@ -11,6 +11,7 @@ function ControlledCarousel({ slides }) {
   return (
     
     <div className="carousel-container2">
+      
       <Carousel activeIndex={index} onSelect={handleSelect} className="carousel2">
         {slides.map((slide, i) => (
           <Carousel.Item key={i}>
@@ -20,7 +21,10 @@ function ControlledCarousel({ slides }) {
           </Carousel.Item>
         ))}
       </Carousel>
-      
+
+      <h2 className="carrusel-title2">
+        {slides[index].titulo}
+      </h2>
       {/* Texto dinámico */}
       <p className="carousel-text2">
         {slides[index].text}

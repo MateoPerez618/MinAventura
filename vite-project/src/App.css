@@ -157,13 +157,15 @@ section {
   }
   
   .card {
-    max-width: 400px;
-    max-height: 800px;
+    width: 30rem;
+    height: 80rem;
     background: #f4f4f4;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
+    align-items: center;
+
   }
   
   .title {
@@ -187,7 +189,7 @@ section {
   .price-list li {
     text-align: left;
     font-size: 20px;
-    margin: 5px 0;
+    margin: 5px;
   }
   
   .BotonCarta {
@@ -212,8 +214,41 @@ section {
   }
   
   .section-5 {
-    background-color: #c1121f; /* Amarillo */
+    background-color: #c1121f;
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
   }
+  
+  .map-title {
+    margin-bottom: 15px;
+  }
+  
+  .map-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .map-container {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .map-description {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 800px;
+  }
+  
 
   .section-6 {
     width: 100%;
@@ -228,7 +263,7 @@ section {
   .titulo-container {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px; /* Espaciado entre el título y el acordeón */
+    margin-bottom: 20px;
   }
   
   .titulo-acordeon {
@@ -482,20 +517,19 @@ button {
 
  .carousel-container2 {
   width: 100%;
-  height: 300vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   position: relative;
   overflow: hidden;
   object-fit: contain;
-  border-radius: 50px;
   flex-direction: column; /* Asegura que el texto quede abajo */
   align-items: center;
 }
 
 .carousel2 {
   width: 100%;
-  height: 90vh; /* Define un tamaño fijo */
+  height: 100%; /* Define un tamaño fijo */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -524,6 +558,13 @@ button {
 .carrusel2 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.carrusel-title2 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
