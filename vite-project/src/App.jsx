@@ -22,7 +22,7 @@ export default function App() {
         <div className="flex flex-col items-center w-full max-w-4xl text-center text-white">
           {/* Carrusel */}
           <div className="w-full flex justify-center">
-            <div className= "carrusel max-w-[100%] w-full">
+            <div className= "carrusel">
               <Carrusel1 />
             </div>
           </div>
@@ -48,9 +48,7 @@ export default function App() {
         <div className="Seccion2ContenedorTitulo">
           <h2 className="Seccion2Titulo">¿Que te espera en la union?</h2>
         </div>
-        <div className="carrusel2">
           <Carrusel2 />
-          </div>
       </section>
 
 

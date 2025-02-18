@@ -4,9 +4,9 @@ function Cartas() {
       {/* Carta 1 - Tarifa Nacional */}
       <div className="card">
         <div className="content">
-          <div className="title">Tarifa Nacional</div>
+          <div className="title">Tour Normal</div>
           <div className="description">
-            Ingreso, Acceso a los lagos, museo del caolín
+            Incluye acceso a: El museo del caolín, los muelles, mirador panorámico y la zona de los pequeños mineros.
           </div>
           <ul className="price-list">
             <li><strong>Adulto Mayor:</strong> $XX</li>
@@ -20,9 +20,9 @@ function Cartas() {
       {/* Carta 2 - Tarifa Premium */}
       <div className="card">
         <div className="content">
-          <div className="title">Tarifa Internacional</div>
+          <div className="title">Tour Premium</div>
           <div className="description">
-            Ingreso, Acceso a los lagos, Museo del caolín
+             Incluye acceso a: El museo del caolín, los muelles, mirador panorámico y la zona de los pequeños mineros, Guia tuistico personal y acceso al taller alfareria.
           </div>
           <ul className="price-list">
             <li><strong>Adulto Mayor:</strong> $XX</li>

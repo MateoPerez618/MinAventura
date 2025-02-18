@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-function ControlledCarousel({ slides }) {
+function ControlledCarousel2({ slides }) {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
@@ -9,28 +9,25 @@ function ControlledCarousel({ slides }) {
   };
 
   return (
-    
-    <div className="carousel-container2">
-      
-      <Carousel activeIndex={index} onSelect={handleSelect} className="carousel2">
+    <div className="carrusel2">
+      <Carousel activeIndex={index} onSelect={handleSelect} className="carrusel-container2">
         {slides.map((slide, i) => (
           <Carousel.Item key={i}>
             <div className="carousel-image-container2">
-              <img src={`${import.meta.env.BASE_URL}${slide.image}`} alt={`Slide ${i + 1}`}/>
+              <img src={`${import.meta.env.BASE_URL}${slide.image}`} alt={`Slide ${i + 1}`} />
             </div>
           </Carousel.Item>
         ))}
       </Carousel>
 
-      <h2 className="carrusel-title2">
-        {slides[index].titulo}
-      </h2>
-      {/* Texto dinámico */}
-      <p className="carousel-text2">
-        {slides[index].text}
-      </p>
+      {/* Contenedor del título y descripción */}
+      <div className="carrusel-text-container2">
+        <h2 className="carrusel-title2">{slides[index].titulo}</h2>
+        <p className="carrusel-description2">{slides[index].text}</p>
+      </div>
+
     </div>
   );
 }
 
-export default ControlledCarousel;
+export default ControlledCarousel2;
