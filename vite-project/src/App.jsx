@@ -81,7 +81,7 @@ export default function App() {
           <div className="map-container">
             <iframe
             title="Google Maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7936.312706839472!2d-75.36686308757321!3d5.9731951465684165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46961598ac13af%3A0x7ea70f9b0c1d7d4c!2sLa%20Uni%C3%B3n%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1739637289681!5m2!1ses-419!2sco"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6819.9270452385035!2d-75.36636158315386!3d5.958957924712073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46970032d7b3fd%3A0x60f13ad07c5b16a3!2sMina%20de%20Caol%C3%ADn%203!5e0!3m2!1ses-419!2sco!4v1740353301925!5m2!1ses-419!2sco"
             width="800"
             height="500"
             style={{ border: 0 }}
