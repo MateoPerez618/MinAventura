@@ -5,11 +5,16 @@ import Boton from "./Boton";
 import Tabla from "./Tabla";
 import Carta from "./Carta";
 import Acordeon from "./Acordeon";
+import WhatsAppButton from "./whatsappbutton";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   return (
     <div>
+      <div>
+      {/* Todo el contenido de la página */}
+      <WhatsAppButton />
+    </div>
       {/* Sección 1 - Carrusel con Textos */}
       <header className="customHeader">
         <img src={`${import.meta.env.BASE_URL}images/Logo.png`} alt="First slide" />
@@ -54,20 +59,26 @@ export default function App() {
 
       {/* Sección 3 */}
       <section className="section-3">
-        <div className="contenedor">
-          {/* Contenedor de la imagen a la izquierda */}
-          <div className="imagen-container">
-            <img src={`${import.meta.env.BASE_URL}images/Imagen5.jpeg`} alt="Horarios de salida" className="imagen-horarios" />
-            </div>
-            {/* Contenedor de la tabla a la derecha */}
-            <div className="Titulo-Tabla">
-              <h2 className="titulo-horarios">Estos son nuestros horarios de salida:</h2>
-              <div className="custom-table">
-                <Tabla />
+        <div className="contenedor3">
+          {/* Contenedor de las imágenes */}
+          <div className="imagenes-container3">
+            <div className="imagen-wrapper3">
+              <img src={`${import.meta.env.BASE_URL}images/mapa1.png`} alt="Mapa interactivo" className="imagen-horarios" />
               </div>
-            </div>
-        </div>
+              <div className="imagen-wrapper3">
+                <img src={`${import.meta.env.BASE_URL}images/mapa2.jpeg`} alt="Mapa interactivo" className="imagen-horarios" />
+                </div>
+                </div>
+                {/* Contenedor de la tabla */}
+                <div className="Titulo-Tabla">
+                  <h2 className="titulo-horarios">Estos son nuestros horarios de salida:</h2>
+                  <div className="custom-table">
+                    <Tabla />
+                </div>
+              </div>
+          </div>
       </section>
+
       {/* Sección 4 */}
       <section className="section-4">
         <Carta/>
